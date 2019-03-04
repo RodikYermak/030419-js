@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 13 - Functions</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        /*
+        
+        
+        */
+        
+        // works but not great practice
+//        function compareFrac() {
+//            console.log('The function is running');
+//            a>b ? console.log('a: ', a) : console.log('b: ', b);
+//        }
+//        var a = 3/4;
+//        var b = 7/8;
+//        compareFrac();
+        
+        // better to use like this
+        function compareFrac(a,b) {
+            console.log('The function is running');
+            a>b ? console.log('a: ', a) : console.log('b: ', b);
+        }
+        var firstFrac = 3/4;
+        var secondFrac = 7/8;
+        compareFrac(firstFrac, secondFrac);
+        compareFrac(4/13, 16/28);
+        
+    </script>
+</body>
+</html>

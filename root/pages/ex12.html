@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 12 - Functions</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        /*
+        Fucntions are like mini programs in our scripts
+        There are 3 types, named, anonymous and IIFE's (immediately involved function expression)
+            function nameOfFunction() {}
+        */
+        
+        
+        var one = 2, two = 3;
+        
+        // named function
+        function multiply(num1, num2) {
+            var result = num1*num2;
+            console.log(result);
+            return result;
+        }
+        multiply(one, two);
+        
+        function divide() {
+            var result = 4/2;
+            console.log('4 divided by 2 is ' + result);
+        }
+        divide();
+        
+    </script>
+</body>
+</html>

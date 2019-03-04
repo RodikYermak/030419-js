@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Example 11 - Arrays, properties and method</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        /*
+        Properties are like metadata that we can get that describe the object (ie: length)
+        Methods are the functions that belong to that object
+        */
+        
+        var colors = ['red', 'blue', 'green', 'teal'];
+        
+        colors2 = new Array('black', 'white', 'orange');
+        
+        // get the length property
+        console.log('The colors array has ' + colors.length + ' colors');
+        
+        // Methods
+        console.log(colors);
+        console.log(colors.reverse());
+        
+        // remove first value
+        colors.shift();
+        
+        // add items to front of array
+        colors.unshift('purple','white');
+        console.log(colors);
+        
+        // remove last item
+        colors.pop();
+        
+        // add items to end of array
+        colors.push('lime', 'fucsia');
+        
+        // remove items from middle of array, you need to pass in arguments for the index of where to start and the number of items to remove
+        colors.splice(1,3);
+        
+        // allow us to create a copy
+        console.log(colors);
+        var newColors = colors.slice();
+        console.log('New colors array: ' + newColors);
+        
+        // indexOf
+        // arrayName.indexOf(search, index);
+        var colorInfo = colors.indexOf('lime', 1);
+        console.log('The value is ' + colors[colorInfo]);
+        
+        // join - allows you to output the array as a list and control how items are separated
+        var colorList = colors.join(', ');
+        console.log(colorList);
+        
+        // https://developer.mozilla.org/en-US/search?q=array&topic=apps&topic=html&topic=css&topic=js&topic=api&topic=canvas&topic=svg&topic=webgl&topic=mobile&topic=webdev&topic=http&topic=webext&topic=standards
+        
+        
+        
+    </script>
+</body>
+</html>

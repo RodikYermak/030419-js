@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 14 - </title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        /*
+        
+        
+        */
+        
+        function compareFrac(a,b) {
+            console.log('The function is running');
+            var result;
+           // a>b ? console.log('a: ', a) : console.log('b: ', b);
+            a>b ? result = ['firstFrac', a] : result = ['secondFrac ', b];
+            return result;
+        }
+        var firstFrac = 3/4;
+        var secondFrac = 7/8;
+        // 1 method
+//        console.log(compareFrac(firstFrac, secondFrac));
+        //compareFrac(4/13, 16/28);
+        
+        var fracResult = compareFrac(firstFrac, secondFrac);
+        console.log(fracResult);
+        
+        console.log('First fraction input is ' + firstFrac);
+        console.log('Second fraction input is ' + secondFrac);
+        console.log('Fraction ' + fracResult[0] + 'with a value of ' + fracResult[1] + ', which is the largest');
+        
+        
+        
+    </script>
+</body>
+</html>
